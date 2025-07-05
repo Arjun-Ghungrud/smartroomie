@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Roomie</title>
+    <link rel="stylesheet" href="smartrommie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-6">
+        <header class="mb-6">
+            <h1 class="text-3xl font-bold">Smart Roomie</h1>
+            <p class="text-gray-600">Find your perfect roommate in NYC!</p>
+        </header>
+
+        <!-- Onboarding Section -->
+        <section id="onboarding" class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Onboarding</h2>
+            <form id="onboardingForm">
+                <div class="mb-4">
+                    <label for="cleanliness" class="block text-gray-700">Cleanliness Preference:</label>
+                    <select id="cleanliness" class="mt-1 block w-full border-gray-300 rounded-md">
+                        <option value="very_clean">Very Clean</option>
+                        <option value="clean">Clean</option>
+                        <option value="average">Average</option>
+                        <option value="messy">Messy</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="pets" class="block text-gray-700">Do you have pets?</label>
+                    <select id="pets" class="mt-1 block w-full border-gray-300 rounded-md">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="social_style" class="block text-gray-700">Social Style:</label>
+                    <select id="social_style" class="mt-1 block w-full border-gray-300 rounded-md">
+                        <option value="social">Social</option>
+                        <option value="neutral">Neutral</option>
+                        <option value="private">Private</option>
+                    </select>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Submit Preferences</button>
+            </form>
+        </section>
+
+        <!-- Room Listing Section -->
+        <section id="roomListing" class="hidden mb-8">
+            <h2 class="text-2xl font-semibold mb-4">List Your Room</h2>
+            <form id="listingForm">
+                <div class="mb-4">
+                    <label for="room_description" class="block text-gray-700">Room Description:</label>
+                    <textarea id="room_description" class="mt-1 block w-full border-gray-300 rounded-md" rows="3"></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="noise_level" class="block text-gray-700">Noise Level:</label>
+                    <select id="noise_level" class="mt-1 block w-full border-gray-300 rounded-md">
+                        <option value="quiet">Quiet</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="loud">Loud</option>
+                    </select>
+                </div>
+                <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded">List Room</button>
+            </form>
+        </section>
+
+        <!-- Match Results Section -->
+        <section id="matchResults" class="hidden mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Match Results</h2>
+            <div id="resultsContainer" class="bg-white p-4 rounded shadow"></div>
+        </section>
+    </div>
+    <script src="smartrommie.js"></script> 
+</body>
+</html>

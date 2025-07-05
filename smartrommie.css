@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8; /* Light background */
+    color: #2d3748; /* Dark gray text */
+}
+
+.container {
+    max-width: 800px; /* Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding */
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1, h2 {
+    color: #4a5568; /* Darker gray for headings */
+}
+
+h1 {
+    font-size: 2.5rem; /* Larger font size for main title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+h2 {
+    font-size: 2rem; /* Slightly smaller for section titles */
+    margin-bottom: 8px; /* Space below section titles */
+}
+
+label {
+    font-weight: bold; /* Bold labels */
+}
+
+select, textarea {
+    border: 1px solid #cbd5e0; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Padding inside inputs */
+    width: 100%; /* Full width */
+    margin-top: 5px; /* Space above inputs */
+}
+
+button {
+    background-color: #4a90e2; /* Bright blue background for buttons */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding for buttons */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #357ab8; /* Darker blue on hover */
+}
+
+.hidden {
+    display: none; /* Keep hidden elements hidden */
+}
+
+.results-container {
+    background-color: #e6f7ff; /* Light blue background for results */
+    padding: 15px; /* Padding inside results */
+    border-radius: 4px; /* Rounded corners */
+    margin-top: 10px; /* Space above results */
+}
+
+.results-container h3 {
+    font-size: 1.5rem; /* Font size for results heading */
+    margin-bottom: 10px; /* Space below results heading */
+    color: #2c3e50; /* Darker color for results heading */
+}
+
+.results-container ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.results-container li {
+    border-bottom: 1px solid #d1e7dd; /* Light green border between results */
+    padding: 10px 0; /* Padding for each result */
+    color: #34495e; /* Darker text for results */
+}
+
+.results-container li:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+
+.mb-4 {
+    margin-bottom: 1rem; /* Consistent margin for spacing */
+}
+
+.bg-blue-600 {
+    background-color: #007bff; /* Bootstrap blue */
+}
+
+.bg-green-600 {
+    background-color: #28a745; /* Bootstrap green */
+}
+
+.text-white {
+    color: white; /* White text */
+}
